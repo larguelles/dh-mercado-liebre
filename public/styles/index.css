@@ -1,5 +1,5 @@
 html * {
-  font-family: Arial !important;
+  font-family: "Roboto", sans-serif !important;
 }
 .primDos {
   font-size: 20px;
@@ -16,13 +16,38 @@ html * {
   font-size: 20px;
   font-weight: bold;
 }
-.specs {
+.price {
   font-size: 18px;
+}
+.discount {
+  font-size: 16px;
+  color: #39b54a;
 }
 .descHead {
   font-size: 14px;
   font-weight: bold;
 }
 .desc {
-  font-size: 14px;
+  font-size: 12px;
+  color: #666;
+}
+#headbg {
+  background-color: #eac926;
+}
+h1 {
+  background-color: #ebebeb;
+  font-size: 24px;
+}
+.ftitle {
+  font-size: 16px;
+}
+.fanswer {
+  font-size: 12px;
+  color: #666;
+}
+#truck {
+  color: #39b54a;
+}
+#footerIcons {
+  color: #03264c;
 }
