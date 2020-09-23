@@ -1,5 +1,12 @@
+* {
+  box-sizing: border-box;
+}
 html * {
   font-family: "Roboto", sans-serif !important;
+}
+body {
+  margin: 0;
+  padding: 0;
 }
 .primDos {
   font-size: 20px;
@@ -38,6 +45,9 @@ h1 {
   background-color: #ebebeb;
   font-size: 24px;
 }
+h2 {
+  font-size: 17px;
+}
 .ftitle {
   font-size: 16px;
 }
@@ -50,4 +60,43 @@ h1 {
 }
 #footerIcons {
   color: #03264c;
+}
+.interesesLabel {
+  font-size: 17px;
+}
+.inputStyle {
+  width: 400px;
+  padding: 15px;
+  font-size: 23px;
+}
+.checkboxStyle {
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  background-color: #eee;
+}
+.checkboxText {
+  font-size: 30px;
+}
+.radioStyle {
+  height: 40px;
+  width: 40px;
+}
+.radioText {
+  font-size: 40px;
+}
+.passwordText {
+  width: 300px;
+  font-size: 23px;
+}
+.passwordLabel {
+  font-size: 10px;
+}
+.buttonStyle {
+  padding: 10px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
