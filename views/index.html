@@ -3,16 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <link href="styles/index.css" type="text/css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <title>Mercado Liebre</title>
   </head>
 
   <body>
       <header id="headbg">
-    <img src="img/logo-mercado-liebre.svg" alt="Logotipo"/>
-    <p class="primDos">Lugar para poner barra de búsqueda</p>
+    <a href="/"><img src="img/logo-mercado-liebre.svg" alt="Logotipo" class="logo"/></a>
+    <div> 
+        <input type="text" placeholder="Buscá productos, marcas..." class="searchbar">
+    </div>
     <p class="primDos">Comprá en cuotas y sin tarjeta de crédito</p>
-    <nav>
+    <div class="hambContainer">
+    <i class="fas fa-bars" id="hambMenu"></i>
+    </div>
+    <nav class="headerNav">
         <ul>
             <li> <a href="*">Ofertas</a></li>
             <li> <a href="*">Tiendas Oficiales</a></li>
@@ -25,11 +30,13 @@
         </ul>
     </nav>
 </header>
+<main>
+<section>
     <img src="img/img-home-banner.jpg" id="homeBanner">
-        </br>
+</section>
         <section>
-            <h1>Basado en tu última visita</h1>
-                <article>
+            <p id="basado">Basado en tu última visita</p>
+                <article class="prodDivision">
                     <img class="prodImage" src="img/img-cafetera-moulinex.jpg" alt="No pudimos encontrar tu imagen.">
                 </br>
                     <i class="fas fa-truck" id="truck"></i>
@@ -40,7 +47,7 @@
                     <p class ="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, </br>
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </article>
-                <article>
+                <article class="prodDivision">
                     <img class="prodImage" src="img/img-macbook-pro-2019.jpg" alt="No pudimos encontrar tu imagen.">
                 </br>
                     <i class="fas fa-truck" id="truck"></i>
@@ -51,7 +58,7 @@
                     <p class ="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, </br>
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </article>
-                <article>
+                <article class="prodDivision">
                     <img class="prodImage" src="img/img-samsung-galaxy-s10.jpg" alt="No pudimos encontrar tu imagen.">
                 </br>
                     <i class="fas fa-truck" id="truck"></i>
@@ -62,7 +69,7 @@
                     <p class ="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, </br>
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </article>
-                <article>
+                <article class="prodDivision">
                     <img class="prodImage" src="img/img-tv-samsung-smart.jpg" alt="No pudimos encontrar tu imagen.">
                 </br>
                     <i class="fas fa-truck" id="truck"></i>
@@ -76,7 +83,7 @@
         </section>
         <section>
             <h1>Ofertas</h1>
-                <article>
+                <article class="prodDivision">
                     <img class="prodImage" src="img/img-cafetera-moulinex.jpg" alt="No pudimos encontrar tu imagen.">
                 </br>
                     <i class="fas fa-truck" id="truck"></i>
@@ -87,7 +94,7 @@
                     <p class ="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, </br>
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </article>
-                <article>
+                <article class="prodDivision">
                     <img class="prodImage" src="img/img-macbook-pro-2019.jpg" alt="No pudimos encontrar tu imagen.">
                 </br>
                     <i class="fas fa-truck" id="truck"></i>
@@ -98,7 +105,7 @@
                     <p class ="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, </br>
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </article>
-                <article>
+                <article class="prodDivision">
                     <img class="prodImage" src="img/img-samsung-galaxy-s10.jpg" alt="No pudimos encontrar tu imagen.">
                 </br>
                     <i class="fas fa-truck" id="truck"></i>
@@ -109,7 +116,7 @@
                     <p class ="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, </br>
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </article>
-                <article>
+                <article class="prodDivision">
                     <img class="prodImage" src="img/img-tv-samsung-smart.jpg" alt="No pudimos encontrar tu imagen.">
                 </br>
                     <i class="fas fa-truck" id="truck"></i>
@@ -121,25 +128,29 @@
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </article>
         </section>
+    </main>
         <footer>
-        </br>
+        <article class="footerArticle">
             <i class="fas fa-credit-card" id="footerIcons"></i>
             <p class="ftitle"><b>Pagá con tarjeta o en efectivo</b></p>
             <p class="fanswer">Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o 
             efectivoen puntos de pago. ¡Y siempre es seguro!</p>
-        </br>
+        </article>
+        <article class="footerArticle">
             <i class="fas fa-gift" id="footerIcons"></i>
             <p class ="ftitle"><b>Envío gratis desde los $ 2.500</b></p>
             <p class ="fanswer">Solo por estar registrad@ en MercadoLiebre tenés envíos gratis 
             en miles de productos. Es un beneficio de MercadoPuntos.</p>
-        </br>
+        </article>
+        <article class="footerArticle">
             <i class="fas fa-user-shield" id="footerIcons"></i>
             <p class="ftitle"><b>Seguridad, de principio a fin</b></p>
             <p class="fanswer">¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no 
             puedas hacer porque estás siempre prtegid@.</p>
-        </br>
+        </article>
+        <div>
             <p class="fanswer">Copyright © 1999-2019 MercadoLiebre S.R.L.</p>
-
+        </div>
         </footer>
   </body>
 </html>
