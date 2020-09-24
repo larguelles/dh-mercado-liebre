@@ -7,13 +7,57 @@ html * {
 body {
   margin: 0;
   padding: 0;
+  background-color: #d3d3d3;
+}
+.logo {
+  width: 50%;
+}
+.searchbar {
+  width: 50%;
+  height: 70px;
+  padding: 6px;
+  border: solid 2px black;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 30px;
+}
+.headerNav {
+  visibility: hidden;
+}
+.hambContainer {
+  text-align: center;
+}
+#hambMenu {
+  height: 80px;
+  width: 80px;
+  background-color: #0044aa;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#hambMenu:hover {
+  background-color: #0022aa;
+  cursor: pointer;
 }
 .primDos {
-  font-size: 20px;
+  font-size: 35px;
 }
 #homeBanner {
-  height: 200px;
-  width: 970px;
+  behavior: inherit;
+  width: 100%;
+}
+#basado {
+  text-align: center;
+  font-size: 45px;
+}
+.prodDivision {
+  background-color: white;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 20px;
 }
 .prodImage {
   height: 500px;
@@ -38,8 +82,10 @@ body {
   font-size: 12px;
   color: #666;
 }
-#headbg {
+.headBG {
   background-color: #eac926;
+  height: 100%;
+  margin: 0;
 }
 h1 {
   background-color: #ebebeb;
@@ -65,9 +111,14 @@ h2 {
   font-size: 17px;
 }
 .inputStyle {
-  width: 400px;
-  padding: 15px;
-  font-size: 23px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .checkboxStyle {
   top: 0;
@@ -93,10 +144,42 @@ h2 {
 .passwordLabel {
   font-size: 10px;
 }
-.buttonStyle {
-  padding: 10px 40px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+.sendButton {
+  width: 100%;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: #0044aa;
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+}
+.resetButton {
+  width: 100%;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: #aa0044;
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+}
+footer {
+  background-color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.footerArticle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.registerMain {
+  background-color: white;
+}
+.radioSection {
+  background-color: white;
+}
+.resetButton:hover {
+  background-color: #cc1155;
+}
+.sendButton:hover {
+  background-color: #0022aa;
 }
