@@ -9,11 +9,16 @@
 
 
 <body>
-    <header id="headbg">
-        <img src="img/logo-mercado-liebre.svg" alt="Logotipo"/>
-        <p class="primDos">Lugar para poner barra de búsqueda</p>
+    <header class="headBG">
+        <a href="/"><img src="img/logo-mercado-liebre.svg" alt="Logotipo" class="logo"/></a>
+        <div> 
+            <input type="text" placeholder="Buscá productos, marcas..." class="searchbar">
+        </div>
         <p class="primDos">Comprá en cuotas y sin tarjeta de crédito</p>
-        <nav>
+        <div class="hambContainer">
+        <i class="fas fa-bars" id="hambMenu"></i>
+        </div>
+        <nav class="headerNav">
             <ul>
                 <li> <a href="*">Ofertas</a></li>
                 <li> <a href="*">Tiendas Oficiales</a></li>
@@ -26,22 +31,24 @@
             </ul>
         </nav>
     </header>
+    <main >
     <form action="placebo.html" method="POST">
-        <p>
+        <p class="registerMain">
             <input type="text" name="name" id="name" placeholder="Nombre y apellido" class="inputStyle">
         </p>
-        <p>
+        <p class="registerMain">
             <input type="text" name="username" id="username" placeholder="Nombre de usuari@" class="inputStyle">
         </p>
-        <p>
+        <p class="registerMain">
             <input type="email" name="email" id="email" placeholder="Email" class="inputStyle">
         </p>
-        <p>
+        <p class="registerMain">
             <input type="date" name="birthDate" id="birthDate" placeholder="Fecha de nacimiento" class="inputStyle">
         </p>
-        <p>
+        <p class="registerMain">
             <input type="text" name="address" id="address" placeholder="Domicilio" class="inputStyle">
         </p>
+        <section class="radioSection">
         <label for="profileClass" class="interestsLabel">Perfil del usuario:</label>
         <p class="radioText">
         <input type="radio" name="profileClass" value="B" class="radioStyle">Comprador</input>
@@ -81,29 +88,36 @@
             <input type="password" name ="password" class="passwordText" placeholder="Confirmá tu contraseña"></input>
         </p>
         <p>
-            <button type="submit" value="Enviar" class="buttonStyle">Enviar</button>
-            <button type="reset" value="Borrar" class="buttonStyle">Borrar</button>
+            <button type="submit" value="Enviar" class="sendButton">Enviar</button>
         </p>
+        <p>
+            <button type="reset" value="Borrar" class="resetButton">Borrar</button>
+        </p>
+    </section>
     </form>
-    <footer>
-    </br>
+</main>
+<footer>
+    <article class="footerArticle">
         <i class="fas fa-credit-card" id="footerIcons"></i>
         <p class="ftitle"><b>Pagá con tarjeta o en efectivo</b></p>
         <p class="fanswer">Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o 
         efectivoen puntos de pago. ¡Y siempre es seguro!</p>
-    </br>
+    </article>
+    <article class="footerArticle">
         <i class="fas fa-gift" id="footerIcons"></i>
         <p class ="ftitle"><b>Envío gratis desde los $ 2.500</b></p>
         <p class ="fanswer">Solo por estar registrad@ en MercadoLiebre tenés envíos gratis 
         en miles de productos. Es un beneficio de MercadoPuntos.</p>
-    </br>
+    </article>
+    <article class="footerArticle">
         <i class="fas fa-user-shield" id="footerIcons"></i>
         <p class="ftitle"><b>Seguridad, de principio a fin</b></p>
         <p class="fanswer">¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no 
         puedas hacer porque estás siempre prtegid@.</p>
-    </br>
+    </article>
+    <div>
         <p class="fanswer">Copyright © 1999-2019 MercadoLiebre S.R.L.</p>
-
+    </div>
     </footer>
 </body>
 </html>
